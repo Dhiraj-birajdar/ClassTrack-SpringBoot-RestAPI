@@ -131,23 +131,6 @@ The project follows a layered architecture pattern, with distinct layers for han
 - **PUT /api/courses/{id}**: Update an existing course.
 - **DELETE /api/courses/{id}**: Delete a course by ID.
 
-
-### Faculty Endpoints
-
-- **GET /api/faculties**: Get all faculties.
-- **GET /api/faculties/{id}**: Get a specific faculty by ID.
-- **POST /api/faculties**: Create a new faculty.
-- **PUT /api/faculties/{id}**: Update an existing faculty.
-- **DELETE /api/faculties/{id}**: Delete a faculty by ID.
-
-### Subject Endpoints
-
-- **GET /api/subjects**: Get all subjects.
-- **GET /api/subjects/{id}**: Get a specific subject by ID.
-- **POST /api/subjects**: Create a new subject.
-- **PUT /api/subjects/{id}**: Update an existing subject.
-- **DELETE /api/subjects/{id}**: Delete a subject by ID.
-
 To explore all the endpoints in detail, visit the [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html) 
 after starting application.
 
@@ -181,7 +164,7 @@ after starting application.
 
 - **Classroom**: Stores information about classrooms, including ID, name, capacity, and availability.
 - **ClassSchedule**: Represents class schedules, including ID, date, time, classroom ID, course ID, and faculty ID.
-- **Course**: Contains details about academic courses, such as ID, name, description, department ID, and credit hours.
+- **Course**: Contains details about academic courses, such as ID, name, description, department ID.
 - **Department**: Stores information about academic departments, including ID, name, and description.
 - **Faculty**: Represents faculty members, including ID, name, email, department ID, and contact information.
 - **Subject**: Contains details about academic subjects, such as ID, name, description, and department ID.

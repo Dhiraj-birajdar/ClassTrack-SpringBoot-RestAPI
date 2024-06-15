@@ -1,0 +1,34 @@
+2024-06-16 02:31:29.787 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-16 02:31:29.875 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 8260 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
+2024-06-16 02:31:29.875 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-16 02:31:29.957 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-16 02:31:29.957 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-16 02:31:31.629 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-16 02:31:31.708 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 7 JPA repository interfaces.
+2024-06-16 02:31:32.794 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-16 02:31:32.795 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-16 02:31:32.810 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-16 02:31:32.810 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-16 02:31:32.872 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-16 02:31:32.872 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2915 ms
+2024-06-16 02:31:32.935 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-16 02:31:33.313 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:classtrack user=SA
+2024-06-16 02:31:33.313 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-16 02:31:33.329 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
+2024-06-16 02:31:33.974 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-16 02:31:34.068 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-16 02:31:34.116 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-16 02:31:34.722 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-16 02:31:34.785 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-16 02:31:35.974 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-16 02:31:36.122 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-16 02:31:37.455 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-16 02:31:37.497 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-16 02:31:38.018 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ce11ec1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76341ff4, org.springframework.security.web.context.SecurityContextHolderFilter@1a309ecd, org.springframework.security.web.header.HeaderWriterFilter@7412ef3d, org.springframework.web.filter.CorsFilter@4e8d82d8, org.springframework.security.web.authentication.logout.LogoutFilter@108adc4d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@42d70f16, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20adeae9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b2a3d67, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@796abfd9, org.springframework.security.web.access.ExceptionTranslationFilter@6eb654e4, org.springframework.security.web.access.intercept.AuthorizationFilter@5c282872]
+2024-06-16 02:31:38.748 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-16 02:31:38.782 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-16 02:31:38.814 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-16 02:31:38.830 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 9.483 seconds (process running for 10.697)
+2024-06-16 02:31:41.539 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-16 02:31:41.539 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-16 02:31:41.539 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
