@@ -43,7 +43,6 @@ The project includes features such as user authentication, course scheduling, at
 - **H2 Database**
 - **MySQL**
 - **Lombok**
-- 
 
 ### Development Tools
 
