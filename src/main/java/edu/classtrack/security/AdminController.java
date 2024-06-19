@@ -3,6 +3,7 @@ import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/admin")
 public class AdminController {
 
-    private Logger logger = LoggerFactory.getLogger(AdminController.class);
+    private final Logger logger = LoggerFactory.getLogger(AdminController.class);
 
     @Autowired
     private UserDetailsService userDetailsService;
@@ -22,7 +23,8 @@ public class AdminController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @PostMapping("/adduser")
+    @PostMapping(value = {"/adduser","/add"},consumes = MediaType.APPLICATION_JSON_VALUE)
+//    @RequestMapping(value = {"/adduser","/add"}, method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> addUser(@Valid @RequestBody UserDto userDto) {
         if(userDto.getRole().equalsIgnoreCase("ADMIN")){
             return ResponseEntity.badRequest().body("invalid role only faculty and student are allowed");

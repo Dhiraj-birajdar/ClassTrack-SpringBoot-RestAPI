@@ -30,14 +30,14 @@ public class SecurityConfig {
                                         new AntPathRequestMatcher("/api/courses/{variable}", "PUT"),
                                         new AntPathRequestMatcher("/api/faculty-attendances/{variable}", "PUT"),
                                         new AntPathRequestMatcher("/api/classschedules/{variable}", "PUT")
-                                ).hasRole("FACULTY")
+                                ).hasAnyRole("FACULTY","ADMIN")
 
                                 .requestMatchers(HttpMethod.PUT).hasRole("ADMIN")
 
                                 .requestMatchers(
                                         new AntPathRequestMatcher("/api/courses/**", "GET"),
                                         new AntPathRequestMatcher("/api/subjects/**", "GET")
-                                ).hasRole("STUDENT")
+                                ).hasAnyRole("STUDENT", "ADMIN", "FACULTY")
 
                                 .requestMatchers(HttpMethod.GET).hasAnyRole("ADMIN", "FACULTY")
 
