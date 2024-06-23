@@ -21,7 +21,7 @@ public class SecurityConfig {
 
         return http.authorizeHttpRequests(
                         ar -> ar
-                                .requestMatchers("/home","/h2-console/**").permitAll()
+                                .requestMatchers("/home","/h2-console/**","/actuator/**").permitAll()
 
                                 .requestMatchers(HttpMethod.DELETE).hasRole("ADMIN")
                                 .requestMatchers(HttpMethod.POST).hasRole("ADMIN")

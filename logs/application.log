@@ -1,105 +1,74 @@
-2024-06-16 02:31:29.787 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
-2024-06-16 02:31:29.875 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 8260 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-16 02:31:29.875 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-16 02:31:29.957 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-16 02:31:29.957 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-16 02:31:31.629 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-16 02:31:31.708 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 7 JPA repository interfaces.
-2024-06-16 02:31:32.794 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-16 02:31:32.795 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-16 02:31:32.810 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-16 02:31:32.810 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-16 02:31:32.872 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-16 02:31:32.872 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2915 ms
-2024-06-16 02:31:32.935 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-06-16 02:31:33.313 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:classtrack user=SA
-2024-06-16 02:31:33.313 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-06-16 02:31:33.329 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-16 02:31:33.974 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-16 02:31:34.068 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-06-16 02:31:34.116 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-16 02:31:34.722 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-16 02:31:34.785 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-16 02:31:35.974 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-16 02:31:36.122 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-16 02:31:37.455 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-16 02:31:37.497 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-16 02:31:38.018 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ce11ec1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76341ff4, org.springframework.security.web.context.SecurityContextHolderFilter@1a309ecd, org.springframework.security.web.header.HeaderWriterFilter@7412ef3d, org.springframework.web.filter.CorsFilter@4e8d82d8, org.springframework.security.web.authentication.logout.LogoutFilter@108adc4d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@42d70f16, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20adeae9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b2a3d67, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@796abfd9, org.springframework.security.web.access.ExceptionTranslationFilter@6eb654e4, org.springframework.security.web.access.intercept.AuthorizationFilter@5c282872]
-2024-06-16 02:31:38.748 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-06-16 02:31:38.782 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-16 02:31:38.814 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-06-16 02:31:38.830 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 9.483 seconds (process running for 10.697)
-2024-06-16 02:31:41.539 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-16 02:31:41.539 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-06-16 02:31:41.539 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2024-06-19 17:21:41.000 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
-2024-06-19 17:21:41.060 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 4888 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-19 17:21:41.062 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 17:21:41.142 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-19 17:21:41.142 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-19 17:21:42.373 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 17:21:42.447 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 7 JPA repository interfaces.
-2024-06-19 17:21:43.180 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-19 17:21:43.202 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:21:43.205 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-19 17:21:43.205 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-19 17:21:43.328 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-19 17:21:43.329 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2186 ms
-2024-06-19 17:21:43.367 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-06-19 17:21:43.571 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:classtrack user=SA
-2024-06-19 17:21:43.573 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-06-19 17:21:43.582 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-19 17:21:43.802 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 17:21:43.872 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-06-19 17:21:43.908 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-19 17:21:44.212 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 17:21:44.266 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-19 17:21:45.264 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19 17:21:45.374 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:21:46.184 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 17:21:46.227 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-19 17:21:46.595 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64430e26, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@198fe852, org.springframework.security.web.context.SecurityContextHolderFilter@61843fb2, org.springframework.security.web.header.HeaderWriterFilter@3b8ccb61, org.springframework.web.filter.CorsFilter@4a4040dd, org.springframework.security.web.authentication.logout.LogoutFilter@582f7524, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1eac63a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51adcbda, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cc5d457, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38a07df1, org.springframework.security.web.access.ExceptionTranslationFilter@6cdc245d, org.springframework.security.web.access.intercept.AuthorizationFilter@411c7aa4]
-2024-06-19 17:21:46.953 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-06-19 17:21:46.980 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:21:46.994 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-06-19 17:21:47.004 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 6.54 seconds (process running for 8.118)
-2024-06-19 17:23:03.878 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-19 17:23:03.878 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-06-19 17:23:03.878 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2024-06-19 17:25:50.018 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2024-06-19 17:25:50.018 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:25:50.033 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:25:50.033 [Thread-5] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-19 17:25:50.033 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-06-19 17:25:50.033 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-06-19 17:25:50.143 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 4888 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-19 17:25:50.143 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 17:25:50.508 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 17:25:50.570 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 7 JPA repository interfaces.
-2024-06-19 17:25:50.889 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-19 17:25:50.889 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:25:50.889 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-19 17:25:50.889 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-19 17:25:50.904 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-19 17:25:50.904 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 761 ms
-2024-06-19 17:25:50.935 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-2024-06-19 17:25:50.935 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:classtrack user=SA
-2024-06-19 17:25:50.935 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-2024-06-19 17:25:50.935 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-19 17:25:51.086 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 17:25:51.101 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-19 17:25:51.109 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 17:25:51.109 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-19 17:25:51.329 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19 17:25:51.416 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:25:51.917 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 17:25:52.230 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-19 17:25:52.278 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75be34e1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64d2e042, org.springframework.security.web.context.SecurityContextHolderFilter@4bb5d1d0, org.springframework.security.web.header.HeaderWriterFilter@5b501110, org.springframework.web.filter.CorsFilter@5e296e81, org.springframework.security.web.csrf.CsrfFilter@798064d7, org.springframework.security.web.authentication.logout.LogoutFilter@7d177188, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72d9030a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1124b73a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5c3210b2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4ff9ac0a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31e9a2ad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a27f7ff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58af3ee9, org.springframework.security.web.access.ExceptionTranslationFilter@56c5be19, org.springframework.security.web.access.intercept.AuthorizationFilter@3404bf33]
-2024-06-19 17:25:52.309 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-06-19 17:25:52.337 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:25:52.340 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-06-19 17:25:52.340 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 2.228 seconds (process running for 253.465)
-2024-06-19 17:25:52.356 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+2024-06-21 17:08:03.833 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-21 17:08:03.893 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 8968 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
+2024-06-21 17:08:03.894 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-21 17:08:03.957 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-21 17:08:03.957 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-21 17:08:05.468 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-21 17:08:05.543 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 7 JPA repository interfaces.
+2024-06-21 17:08:06.454 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-21 17:08:06.465 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-21 17:08:06.467 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-21 17:08:06.467 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-21 17:08:06.517 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-21 17:08:06.518 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2559 ms
+2024-06-21 17:08:06.669 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-21 17:08:06.863 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:classtrack user=SA
+2024-06-21 17:08:06.864 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-21 17:08:06.872 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
+2024-06-21 17:08:07.163 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-21 17:08:07.235 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-21 17:08:07.272 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-21 17:08:07.598 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-21 17:08:07.653 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-21 17:08:09.043 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-21 17:08:09.181 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 17:08:10.191 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-21 17:08:10.232 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-21 17:08:10.833 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
+2024-06-21 17:08:10.965 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@43e2d122, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a73b893, org.springframework.security.web.context.SecurityContextHolderFilter@3894eae1, org.springframework.security.web.header.HeaderWriterFilter@5f3960f0, org.springframework.web.filter.CorsFilter@3c42774b, org.springframework.security.web.authentication.logout.LogoutFilter@22dc99d1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@23262b1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5eb2b965, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7817c747, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e58d690, org.springframework.security.web.access.ExceptionTranslationFilter@2bb20fa, org.springframework.security.web.access.intercept.AuthorizationFilter@447dc7e5]
+2024-06-21 17:08:11.631 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-21 17:08:11.701 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-21 17:08:11.716 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-21 17:08:11.732 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 8.397 seconds (process running for 9.925)
+2024-06-21 17:08:11.972 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - Application registered itself as 34fecff80a31
+2024-06-21 17:08:12.303 [RMI TCP Connection(2)-192.168.0.102] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-21 17:08:12.303 [RMI TCP Connection(2)-192.168.0.102] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-21 17:08:12.307 [RMI TCP Connection(2)-192.168.0.102] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-06-21 17:09:30.222 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-06-21 17:09:30.230 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-21 17:09:30.244 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 17:09:30.255 [Thread-5] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-21 17:09:30.256 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-21 17:09:30.261 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-21 17:09:30.433 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 8968 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
+2024-06-21 17:09:30.433 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-21 17:09:31.132 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-21 17:09:31.196 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 7 JPA repository interfaces.
+2024-06-21 17:09:31.495 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-21 17:09:31.496 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-21 17:09:31.497 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-21 17:09:31.497 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-21 17:09:31.528 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-21 17:09:31.528 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1092 ms
+2024-06-21 17:09:31.633 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-06-21 17:09:31.636 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:classtrack user=SA
+2024-06-21 17:09:31.636 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-06-21 17:09:31.636 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
+2024-06-21 17:09:31.864 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-21 17:09:31.869 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-21 17:09:31.890 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-21 17:09:31.898 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-21 17:09:32.176 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-21 17:09:32.262 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 17:09:33.098 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-21 17:09:34.263 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-21 17:09:34.316 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
+2024-06-21 17:09:34.347 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6b96fc7f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fca620f, org.springframework.security.web.context.SecurityContextHolderFilter@5dda988c, org.springframework.security.web.header.HeaderWriterFilter@6cd4cb72, org.springframework.web.filter.CorsFilter@45194dd7, org.springframework.security.web.csrf.CsrfFilter@2fbc0eda, org.springframework.security.web.authentication.logout.LogoutFilter@636e8d5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@487af4cd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@20b1bdc3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4161eabc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4d20349, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78dc593f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7bd2cb8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d4883eb, org.springframework.security.web.access.ExceptionTranslationFilter@23e95404, org.springframework.security.web.access.intercept.AuthorizationFilter@4997bb]
+2024-06-21 17:09:34.445 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-21 17:09:34.477 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-21 17:09:34.480 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-21 17:09:34.492 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 4.096 seconds (process running for 92.685)
+2024-06-21 17:09:34.498 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
 
 
 ==========================
@@ -110,7 +79,8 @@ CONDITION EVALUATION DELTA
 Positive matches:
 -----------------
 
-   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
+   ManagementWebSecurityAutoConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
       - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
 
    SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
@@ -137,40 +107,45 @@ Unconditional classes:
 
 
 
-2024-06-19 17:25:53.736 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2024-06-19 17:25:53.736 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:25:53.736 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:25:53.736 [Thread-7] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-19 17:25:53.736 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-2024-06-19 17:25:53.736 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-2024-06-19 17:25:53.830 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 4888 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-19 17:25:53.830 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 17:25:54.201 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 17:25:54.232 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 7 JPA repository interfaces.
-2024-06-19 17:25:54.475 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-19 17:25:54.491 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:25:54.491 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-19 17:25:54.491 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-19 17:25:54.514 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-19 17:25:54.514 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 684 ms
-2024-06-19 17:25:54.538 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
-2024-06-19 17:25:54.538 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:classtrack user=SA
-2024-06-19 17:25:54.538 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
-2024-06-19 17:25:54.538 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-19 17:25:54.632 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 17:25:54.632 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-19 17:25:54.632 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 17:25:54.632 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-19 17:25:54.743 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19 17:25:54.774 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:25:55.264 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 17:25:55.280 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-19 17:25:55.420 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@385ac5d2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24678415, org.springframework.security.web.context.SecurityContextHolderFilter@77b7d9ea, org.springframework.security.web.header.HeaderWriterFilter@1d5bc23, org.springframework.web.filter.CorsFilter@7f74aff6, org.springframework.security.web.authentication.logout.LogoutFilter@1bc2d8f3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@35d286db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5187888, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e6bac84, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e310a9d, org.springframework.security.web.access.ExceptionTranslationFilter@212b4473, org.springframework.security.web.access.intercept.AuthorizationFilter@7ef4a788]
-2024-06-19 17:25:55.576 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-06-19 17:25:55.576 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:25:55.576 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-06-19 17:25:55.592 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 1.793 seconds (process running for 256.707)
-2024-06-19 17:25:55.592 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+2024-06-21 17:09:34.519 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-21 17:09:34.520 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-21 17:09:34.521 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - Application registered itself as 34fecff80a31
+2024-06-21 17:09:34.523 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-06-21 17:09:35.889 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-06-21 17:09:35.891 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-21 17:09:35.904 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 17:09:35.905 [Thread-7] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-21 17:09:35.906 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-06-21 17:09:35.911 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-06-21 17:09:36.124 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 8968 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
+2024-06-21 17:09:36.125 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-21 17:09:36.452 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-21 17:09:36.474 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 7 JPA repository interfaces.
+2024-06-21 17:09:36.666 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-21 17:09:36.667 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-21 17:09:36.667 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-21 17:09:36.667 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-21 17:09:36.682 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-21 17:09:36.682 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 556 ms
+2024-06-21 17:09:36.756 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-06-21 17:09:36.757 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:classtrack user=SA
+2024-06-21 17:09:36.757 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-06-21 17:09:36.758 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
+2024-06-21 17:09:36.848 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-21 17:09:36.850 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-21 17:09:36.855 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-21 17:09:36.856 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-21 17:09:36.948 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-21 17:09:36.975 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 17:09:37.543 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-21 17:09:37.567 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-21 17:09:37.847 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
+2024-06-21 17:09:37.913 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b75847a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@508b24cc, org.springframework.security.web.context.SecurityContextHolderFilter@1db7c2a4, org.springframework.security.web.header.HeaderWriterFilter@60391287, org.springframework.web.filter.CorsFilter@3d0ea851, org.springframework.security.web.authentication.logout.LogoutFilter@3af25c69, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@788262ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16f9318b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@af0e8fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28618569, org.springframework.security.web.access.ExceptionTranslationFilter@252b27e2, org.springframework.security.web.access.intercept.AuthorizationFilter@42510058]
+2024-06-21 17:09:38.276 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-21 17:09:38.313 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-21 17:09:38.315 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-21 17:09:38.328 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 2.242 seconds (process running for 96.521)
+2024-06-21 17:09:38.332 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
 
 
 ==========================
@@ -187,9 +162,11 @@ Positive matches:
 Negative matches:
 -----------------
 
-   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+   ManagementWebSecurityAutoConfiguration:
       Did not match:
          - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
 
    SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
       Did not match:
@@ -211,733 +188,90 @@ Unconditional classes:
 
 
 
-2024-06-19 17:25:58.390 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-19 17:25:58.390 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-06-19 17:25:58.391 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-06-19 17:28:52.059 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2024-06-19 17:28:52.059 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:28:52.059 [Thread-12] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:28:52.059 [Thread-12] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-19 17:28:52.059 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
-2024-06-19 17:28:52.059 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
-2024-06-19 17:28:52.190 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 4888 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-19 17:28:52.190 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 17:28:52.661 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 17:28:52.707 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 7 JPA repository interfaces.
-2024-06-19 17:28:52.958 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-19 17:28:52.958 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:28:52.958 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-19 17:28:52.958 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-19 17:28:53.005 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-19 17:28:53.005 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 815 ms
-2024-06-19 17:28:53.021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
-2024-06-19 17:28:53.021 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:classtrack user=SA
-2024-06-19 17:28:53.021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
-2024-06-19 17:28:53.021 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-19 17:28:53.115 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 17:28:53.115 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-19 17:28:53.136 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 17:28:53.151 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-19 17:28:53.329 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19 17:28:53.383 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:28:53.970 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 17:28:54.255 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-19 17:28:54.302 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@174295e8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4edb961c, org.springframework.security.web.context.SecurityContextHolderFilter@28b17c83, org.springframework.security.web.header.HeaderWriterFilter@7d23cf4c, org.springframework.web.filter.CorsFilter@46d4e3d1, org.springframework.security.web.csrf.CsrfFilter@76606748, org.springframework.security.web.authentication.logout.LogoutFilter@29192dec, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6c1c837d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3862764b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@40f39506, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@785fdfc2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d1e14fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bd89bd3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@431da525, org.springframework.security.web.access.ExceptionTranslationFilter@13e2b44e, org.springframework.security.web.access.intercept.AuthorizationFilter@c0aa95d]
-2024-06-19 17:28:54.411 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-06-19 17:28:54.458 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:28:54.458 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-06-19 17:28:54.458 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 2.315 seconds (process running for 435.588)
-2024-06-19 17:28:54.474 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
-
-
-==========================
-CONDITION EVALUATION DELTA
-==========================
-
-
-Positive matches:
------------------
-
-   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
-      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
-
-   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
-      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
-      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
-
-
-Negative matches:
------------------
-
-    None
-
-
-Exclusions:
------------
-
-    None
-
-
-Unconditional classes:
-----------------------
-
-    None
-
-
-
-2024-06-19 17:28:55.871 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2024-06-19 17:28:55.871 [Thread-16] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:28:55.871 [Thread-16] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:28:55.871 [Thread-16] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-19 17:28:55.871 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
-2024-06-19 17:28:55.871 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
-2024-06-19 17:28:55.965 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 4888 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-19 17:28:55.965 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 17:28:56.265 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 17:28:56.296 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 7 JPA repository interfaces.
-2024-06-19 17:28:56.501 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-19 17:28:56.501 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:28:56.501 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-19 17:28:56.501 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-19 17:28:56.526 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-19 17:28:56.526 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 545 ms
-2024-06-19 17:28:56.548 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
-2024-06-19 17:28:56.548 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:classtrack user=SA
-2024-06-19 17:28:56.548 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
-2024-06-19 17:28:56.548 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-19 17:28:56.628 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 17:28:56.628 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-19 17:28:56.643 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 17:28:56.643 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-19 17:28:56.792 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19 17:28:56.844 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:28:57.517 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 17:28:57.549 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-19 17:28:57.736 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [edu/classtrack/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: authorities cannot be empty
-2024-06-19 17:28:57.736 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:28:57.736 [restartedMain] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-19 17:28:57.736 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
-2024-06-19 17:28:57.736 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
-2024-06-19 17:28:57.736 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-06-19 17:28:57.736 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-06-19 17:28:57.767 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [edu/classtrack/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: authorities cannot be empty
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:895)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:848)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
-	at edu.classtrack.ClassTrackSpringBootRestApiApplication.main(ClassTrackSpringBootRestApiApplication.java:10)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [edu/classtrack/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: authorities cannot be empty
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1337)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1167)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1689)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1653)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1543)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1511)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1392)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:887)
-	... 23 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: authorities cannot be empty
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
-	... 40 common frames omitted
-Caused by: java.lang.IllegalArgumentException: authorities cannot be empty
-	at org.springframework.util.Assert.notEmpty(Assert.java:308)
-	at org.springframework.security.authorization.AuthorityAuthorizationManager.hasAnyAuthority(AuthorityAuthorizationManager.java:119)
-	at org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$AuthorizedUrl.hasAnyAuthority(AuthorizeHttpRequestsConfigurer.java:341)
-	at edu.classtrack.config.SecurityConfig.lambda$securityFilterChain$0(SecurityConfig.java:40)
-	at org.springframework.security.config.annotation.web.builders.HttpSecurity.authorizeHttpRequests(HttpSecurity.java:1467)
-	at edu.classtrack.config.SecurityConfig.securityFilterChain(SecurityConfig.java:22)
-	at edu.classtrack.config.SecurityConfig$$SpringCGLIB$$0.CGLIB$securityFilterChain$0(<generated>)
-	at edu.classtrack.config.SecurityConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:339)
-	at edu.classtrack.config.SecurityConfig$$SpringCGLIB$$0.securityFilterChain(<generated>)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
-	... 41 common frames omitted
-2024-06-19 17:29:52.536 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 4888 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-19 17:29:52.536 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 17:29:52.840 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 17:29:52.871 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 7 JPA repository interfaces.
-2024-06-19 17:29:53.012 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-19 17:29:53.028 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:29:53.028 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-19 17:29:53.028 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-19 17:29:53.044 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-19 17:29:53.044 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 508 ms
-2024-06-19 17:29:53.059 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
-2024-06-19 17:29:53.059 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:classtrack user=SA
-2024-06-19 17:29:53.059 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
-2024-06-19 17:29:53.059 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-19 17:29:53.122 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 17:29:53.122 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-19 17:29:53.138 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 17:29:53.138 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-19 17:29:53.247 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19 17:29:53.278 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:29:53.719 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 17:29:53.910 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-19 17:29:53.943 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@439417a9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ec5e10d, org.springframework.security.web.context.SecurityContextHolderFilter@1845dc65, org.springframework.security.web.header.HeaderWriterFilter@5c030941, org.springframework.web.filter.CorsFilter@36c0ae4a, org.springframework.security.web.csrf.CsrfFilter@1044956c, org.springframework.security.web.authentication.logout.LogoutFilter@2045ce38, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a317c8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4cbeceea, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@71f12305, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@e992dea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c1ec5f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8b387bc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@123b4bcd, org.springframework.security.web.access.ExceptionTranslationFilter@4bbdf695, org.springframework.security.web.access.intercept.AuthorizationFilter@e2c6214]
-2024-06-19 17:29:53.953 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-06-19 17:29:53.969 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:29:53.984 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-06-19 17:29:53.984 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 1.479 seconds (process running for 495.105)
-2024-06-19 17:29:53.984 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2024-06-19 17:29:55.391 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2024-06-19 17:29:55.391 [Thread-20] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:29:55.391 [Thread-20] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:29:55.391 [Thread-20] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-19 17:29:55.391 [Thread-20] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
-2024-06-19 17:29:55.391 [Thread-20] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
-2024-06-19 17:29:55.484 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 4888 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-19 17:29:55.484 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 17:29:55.801 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 17:29:55.817 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 7 JPA repository interfaces.
-2024-06-19 17:29:56.024 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-19 17:29:56.024 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:29:56.024 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-19 17:29:56.024 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-19 17:29:56.055 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-19 17:29:56.055 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 571 ms
-2024-06-19 17:29:56.071 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
-2024-06-19 17:29:56.071 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:classtrack user=SA
-2024-06-19 17:29:56.071 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
-2024-06-19 17:29:56.071 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-19 17:29:56.149 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 17:29:56.149 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-19 17:29:56.165 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 17:29:56.165 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-19 17:29:56.243 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19 17:29:56.259 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:29:56.687 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 17:29:56.705 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-19 17:29:56.911 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@298eee97, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@738f56a6, org.springframework.security.web.context.SecurityContextHolderFilter@6108dc73, org.springframework.security.web.header.HeaderWriterFilter@42e216de, org.springframework.web.filter.CorsFilter@66c51d57, org.springframework.security.web.authentication.logout.LogoutFilter@5124fc85, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5f38e121, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@142fa1c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@246efbda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7eecc947, org.springframework.security.web.access.ExceptionTranslationFilter@71b82930, org.springframework.security.web.access.intercept.AuthorizationFilter@6b0fda0a]
-2024-06-19 17:29:57.185 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-06-19 17:29:57.200 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:29:57.200 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-06-19 17:29:57.200 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 1.747 seconds (process running for 498.322)
-2024-06-19 17:29:57.200 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
-
-
-==========================
-CONDITION EVALUATION DELTA
-==========================
-
-
-Positive matches:
------------------
-
-    None
-
-
-Negative matches:
------------------
-
-   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
-      Did not match:
-         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
-
-   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
-      Did not match:
-         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
-      Matched:
-         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
-
-
-Exclusions:
------------
-
-    None
-
-
-Unconditional classes:
-----------------------
-
-    None
-
-
-
-2024-06-19 17:29:59.786 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-19 17:29:59.786 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-06-19 17:29:59.786 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2024-06-19 17:31:57.359 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2024-06-19 17:31:57.359 [Thread-27] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:31:57.359 [Thread-27] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:31:57.359 [Thread-27] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-19 17:31:57.359 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
-2024-06-19 17:31:57.359 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
-2024-06-19 17:31:57.453 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 4888 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-19 17:31:57.453 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 17:31:57.739 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 17:31:57.771 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 7 JPA repository interfaces.
-2024-06-19 17:31:57.927 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-19 17:31:57.927 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:31:57.927 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-19 17:31:57.927 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-19 17:31:57.942 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-19 17:31:57.942 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 489 ms
-2024-06-19 17:31:57.958 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
-2024-06-19 17:31:57.958 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Added connection conn70: url=jdbc:h2:mem:classtrack user=SA
-2024-06-19 17:31:57.958 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
-2024-06-19 17:31:57.958 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-19 17:31:58.020 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 17:31:58.020 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-19 17:31:58.020 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 17:31:58.020 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-19 17:31:58.162 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19 17:31:58.193 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:31:58.673 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 17:31:58.863 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-19 17:31:58.879 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f9934f1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d0ca1ac, org.springframework.security.web.context.SecurityContextHolderFilter@e74bb64, org.springframework.security.web.header.HeaderWriterFilter@2225fd49, org.springframework.web.filter.CorsFilter@7e5fce5, org.springframework.security.web.csrf.CsrfFilter@2230280a, org.springframework.security.web.authentication.logout.LogoutFilter@4a1d4e64, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6e589363, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@71b82c51, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7dfc1125, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4e168ea2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2da7b2d8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cfa5932, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ba48cd7, org.springframework.security.web.access.ExceptionTranslationFilter@391d122c, org.springframework.security.web.access.intercept.AuthorizationFilter@546adfb9]
-2024-06-19 17:31:58.895 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-06-19 17:31:58.910 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:31:58.910 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-06-19 17:31:58.910 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 1.473 seconds (process running for 620.032)
-2024-06-19 17:31:58.910 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
-
-
-==========================
-CONDITION EVALUATION DELTA
-==========================
-
-
-Positive matches:
------------------
-
-   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
-      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
-
-   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
-      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
-      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
-
-
-Negative matches:
------------------
-
-    None
-
-
-Exclusions:
------------
-
-    None
-
-
-Unconditional classes:
-----------------------
-
-    None
-
-
-
-2024-06-19 17:32:00.317 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2024-06-19 17:32:00.318 [Thread-31] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:32:00.322 [Thread-31] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:32:00.323 [Thread-31] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-19 17:32:00.323 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
-2024-06-19 17:32:00.324 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
-2024-06-19 17:32:00.425 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 4888 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-19 17:32:00.425 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 17:32:00.869 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 17:32:00.901 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 7 JPA repository interfaces.
-2024-06-19 17:32:01.104 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-19 17:32:01.104 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:32:01.104 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-19 17:32:01.104 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-19 17:32:01.135 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-19 17:32:01.135 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 710 ms
-2024-06-19 17:32:01.175 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
-2024-06-19 17:32:01.176 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-9 - Added connection conn80: url=jdbc:h2:mem:classtrack user=SA
-2024-06-19 17:32:01.177 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
-2024-06-19 17:32:01.177 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-19 17:32:01.261 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 17:32:01.261 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-19 17:32:01.277 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 17:32:01.277 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-19 17:32:01.371 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19 17:32:01.402 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:32:01.858 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 17:32:01.874 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-19 17:32:01.983 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4fc33fcc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23115544, org.springframework.security.web.context.SecurityContextHolderFilter@2823b496, org.springframework.security.web.header.HeaderWriterFilter@63a655af, org.springframework.web.filter.CorsFilter@d3c110f, org.springframework.security.web.authentication.logout.LogoutFilter@617febc2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@51fcffca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@620a5a5a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51744f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b08bdcd, org.springframework.security.web.access.ExceptionTranslationFilter@36ba281a, org.springframework.security.web.access.intercept.AuthorizationFilter@6e98136a]
-2024-06-19 17:32:02.108 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-06-19 17:32:02.124 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:32:02.124 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-06-19 17:32:02.124 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 1.717 seconds (process running for 623.25)
-2024-06-19 17:32:02.124 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
-
-
-==========================
-CONDITION EVALUATION DELTA
-==========================
-
-
-Positive matches:
------------------
-
-    None
-
-
-Negative matches:
------------------
-
-   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
-      Did not match:
-         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
-
-   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
-      Did not match:
-         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
-      Matched:
-         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
-
-
-Exclusions:
------------
-
-    None
-
-
-Unconditional classes:
-----------------------
-
-    None
-
-
-
-2024-06-19 17:32:08.189 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-19 17:32:08.189 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-06-19 17:32:08.189 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2024-06-19 17:32:35.572 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2024-06-19 17:32:35.572 [Thread-35] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:32:35.572 [Thread-35] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:32:35.572 [Thread-35] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-19 17:32:35.572 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
-2024-06-19 17:32:35.572 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
-2024-06-19 17:32:35.682 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 4888 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-19 17:32:35.682 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 17:32:35.988 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 17:32:36.019 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 7 JPA repository interfaces.
-2024-06-19 17:32:36.155 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-19 17:32:36.155 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:32:36.155 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-19 17:32:36.171 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-19 17:32:36.184 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-19 17:32:36.184 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 502 ms
-2024-06-19 17:32:36.200 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
-2024-06-19 17:32:36.215 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-10 - Added connection conn90: url=jdbc:h2:mem:classtrack user=SA
-2024-06-19 17:32:36.215 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
-2024-06-19 17:32:36.215 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-19 17:32:36.266 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 17:32:36.270 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-19 17:32:36.270 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 17:32:36.270 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-19 17:32:36.384 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19 17:32:36.437 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:32:36.886 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 17:32:37.043 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-19 17:32:37.058 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b2d3b51, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@319332a1, org.springframework.security.web.context.SecurityContextHolderFilter@72f703fd, org.springframework.security.web.header.HeaderWriterFilter@1057074d, org.springframework.web.filter.CorsFilter@4af4434c, org.springframework.security.web.csrf.CsrfFilter@606e50cd, org.springframework.security.web.authentication.logout.LogoutFilter@48d66e59, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7541cbb4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@c1d7e30, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@32adb42e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@e1ec7e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@608ddd56, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24587899, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1078f699, org.springframework.security.web.access.ExceptionTranslationFilter@54d21876, org.springframework.security.web.access.intercept.AuthorizationFilter@48a64c51]
-2024-06-19 17:32:37.074 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-06-19 17:32:37.090 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:32:37.105 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-06-19 17:32:37.105 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 1.454 seconds (process running for 658.226)
-2024-06-19 17:32:37.105 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
-
-
-==========================
-CONDITION EVALUATION DELTA
-==========================
-
-
-Positive matches:
------------------
-
-   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
-      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
-
-   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
-      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
-      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
-
-
-Negative matches:
------------------
-
-    None
-
-
-Exclusions:
------------
-
-    None
-
-
-Unconditional classes:
-----------------------
-
-    None
-
-
-
-2024-06-19 17:32:38.502 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2024-06-19 17:32:38.502 [Thread-39] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:32:38.515 [Thread-39] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:32:38.515 [Thread-39] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-19 17:32:38.515 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
-2024-06-19 17:32:38.515 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
-2024-06-19 17:32:38.650 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 4888 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-19 17:32:38.650 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 17:32:38.838 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 17:32:38.854 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 7 JPA repository interfaces.
-2024-06-19 17:32:38.964 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-19 17:32:38.964 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:32:38.964 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-19 17:32:38.964 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-19 17:32:38.980 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-19 17:32:38.980 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 330 ms
-2024-06-19 17:32:39.010 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
-2024-06-19 17:32:39.011 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-11 - Added connection conn100: url=jdbc:h2:mem:classtrack user=SA
-2024-06-19 17:32:39.011 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
-2024-06-19 17:32:39.011 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-19 17:32:39.059 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 17:32:39.059 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-19 17:32:39.059 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 17:32:39.074 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-19 17:32:39.185 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19 17:32:39.201 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:32:39.623 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 17:32:39.639 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-19 17:32:39.764 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@452415a9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b33faef, org.springframework.security.web.context.SecurityContextHolderFilter@7d53610a, org.springframework.security.web.header.HeaderWriterFilter@60a3515e, org.springframework.web.filter.CorsFilter@4696b138, org.springframework.security.web.authentication.logout.LogoutFilter@19b918d9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@148ab831, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fdea58, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d7e547, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79cc2eb, org.springframework.security.web.access.ExceptionTranslationFilter@510a1434, org.springframework.security.web.access.intercept.AuthorizationFilter@483ab049]
-2024-06-19 17:32:39.873 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-06-19 17:32:39.889 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:32:39.889 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-06-19 17:32:39.889 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 1.27 seconds (process running for 661.016)
-2024-06-19 17:32:39.889 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
-
-
-==========================
-CONDITION EVALUATION DELTA
-==========================
-
-
-Positive matches:
------------------
-
-    None
-
-
-Negative matches:
------------------
-
-   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
-      Did not match:
-         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
-
-   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
-      Did not match:
-         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
-      Matched:
-         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
-
-
-Exclusions:
------------
-
-    None
-
-
-Unconditional classes:
-----------------------
-
-    None
-
-
-
-2024-06-19 17:32:40.367 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-19 17:32:40.367 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-06-19 17:32:40.369 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-06-19 17:33:11.942 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2024-06-19 17:33:11.942 [Thread-43] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:33:11.949 [Thread-43] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:33:11.949 [Thread-43] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-19 17:33:11.949 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
-2024-06-19 17:33:11.949 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
-2024-06-19 17:33:12.043 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 4888 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-19 17:33:12.043 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 17:33:12.309 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 17:33:12.340 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 7 JPA repository interfaces.
-2024-06-19 17:33:12.496 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-19 17:33:12.496 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:33:12.496 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-19 17:33:12.496 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-19 17:33:12.512 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-19 17:33:12.512 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 469 ms
-2024-06-19 17:33:12.543 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
-2024-06-19 17:33:12.543 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-12 - Added connection conn110: url=jdbc:h2:mem:classtrack user=SA
-2024-06-19 17:33:12.543 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
-2024-06-19 17:33:12.543 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-19 17:33:12.590 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 17:33:12.590 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-19 17:33:12.606 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 17:33:12.606 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-19 17:33:12.733 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19 17:33:12.766 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:33:13.249 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 17:33:13.437 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-19 17:33:13.453 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@14ce226e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c5d9d9b, org.springframework.security.web.context.SecurityContextHolderFilter@42ca969, org.springframework.security.web.header.HeaderWriterFilter@2725b987, org.springframework.web.filter.CorsFilter@415e62cb, org.springframework.security.web.csrf.CsrfFilter@206f62fd, org.springframework.security.web.authentication.logout.LogoutFilter@1d3f9af2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e8a6487, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@594fc042, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4213dda7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1f8399ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f0f4b9b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53aca231, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@272b4ad9, org.springframework.security.web.access.ExceptionTranslationFilter@17436d96, org.springframework.security.web.access.intercept.AuthorizationFilter@cde96aa]
-2024-06-19 17:33:13.484 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-06-19 17:33:13.500 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:33:13.500 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-06-19 17:33:13.500 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 1.489 seconds (process running for 694.622)
-2024-06-19 17:33:13.500 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
-
-
-==========================
-CONDITION EVALUATION DELTA
-==========================
-
-
-Positive matches:
------------------
-
-   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
-      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
-
-   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
-      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
-      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
-
-
-Negative matches:
------------------
-
-    None
-
-
-Exclusions:
------------
-
-    None
-
-
-Unconditional classes:
-----------------------
-
-    None
-
-
-
-2024-06-19 17:33:14.898 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2024-06-19 17:33:14.898 [Thread-47] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:33:14.898 [Thread-47] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:33:14.898 [Thread-47] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-19 17:33:14.898 [Thread-47] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
-2024-06-19 17:33:14.898 [Thread-47] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
-2024-06-19 17:33:14.976 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 4888 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
-2024-06-19 17:33:14.976 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 17:33:15.177 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 17:33:15.199 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 7 JPA repository interfaces.
-2024-06-19 17:33:15.386 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-19 17:33:15.386 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:33:15.386 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-19 17:33:15.386 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-06-19 17:33:15.417 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-19 17:33:15.417 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 441 ms
-2024-06-19 17:33:15.432 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Starting...
-2024-06-19 17:33:15.432 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-13 - Added connection conn120: url=jdbc:h2:mem:classtrack user=SA
-2024-06-19 17:33:15.432 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Start completed.
-2024-06-19 17:33:15.432 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
-2024-06-19 17:33:15.479 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 17:33:15.495 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-06-19 17:33:15.527 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 17:33:15.527 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-19 17:33:15.667 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19 17:33:15.699 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:33:16.193 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 17:33:16.193 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-06-19 17:33:16.348 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8fdd539, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4bb8d980, org.springframework.security.web.context.SecurityContextHolderFilter@6c3bd45, org.springframework.security.web.header.HeaderWriterFilter@a67d77d, org.springframework.web.filter.CorsFilter@274796e2, org.springframework.security.web.authentication.logout.LogoutFilter@148d858, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4f304e9f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@826b98d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e928157, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ace7023, org.springframework.security.web.access.ExceptionTranslationFilter@6e890375, org.springframework.security.web.access.intercept.AuthorizationFilter@6bd45d0]
-2024-06-19 17:33:16.490 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-06-19 17:33:16.505 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-19 17:33:16.505 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-06-19 17:33:16.505 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 1.545 seconds (process running for 697.627)
-2024-06-19 17:33:16.505 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
-
-
-==========================
-CONDITION EVALUATION DELTA
-==========================
-
-
-Positive matches:
------------------
-
-    None
-
-
-Negative matches:
------------------
-
-   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
-      Did not match:
-         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
-
-   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
-      Did not match:
-         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
-      Matched:
-         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
-
-
-Exclusions:
------------
-
-    None
-
-
-Unconditional classes:
-----------------------
-
-    None
-
-
-
-2024-06-19 17:33:17.673 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-19 17:33:17.673 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-06-19 17:33:17.673 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2024-06-19 17:34:13.635 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 17:34:13.635 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-06-19 17:34:13.635 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown initiated...
-2024-06-19 17:34:13.635 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown completed.
+2024-06-21 17:09:38.350 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - Application registered itself as 34fecff80a31
+2024-06-21 17:09:38.350 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-21 17:09:38.350 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-21 17:09:38.352 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-21 17:19:27.323 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-06-21 17:19:27.325 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-21 17:19:27.330 [Thread-12] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 17:19:27.331 [Thread-12] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-21 17:19:27.332 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-06-21 17:19:27.335 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-06-21 17:19:27.491 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 8968 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
+2024-06-21 17:19:27.491 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-21 17:19:28.078 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-21 17:19:28.100 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 7 JPA repository interfaces.
+2024-06-21 17:19:28.353 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-21 17:19:28.355 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-21 17:19:28.355 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-21 17:19:28.355 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-21 17:19:28.370 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-21 17:19:28.370 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 876 ms
+2024-06-21 17:19:28.441 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2024-06-21 17:19:28.444 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:classtrack user=SA
+2024-06-21 17:19:28.445 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2024-06-21 17:19:28.445 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
+2024-06-21 17:19:28.554 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-21 17:19:28.557 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-21 17:19:28.569 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-21 17:19:28.571 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-21 17:19:28.732 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-21 17:19:28.797 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 17:19:29.327 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-21 17:19:29.359 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-21 17:19:29.684 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
+2024-06-21 17:19:29.753 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@41acc7d2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28ca802c, org.springframework.security.web.context.SecurityContextHolderFilter@311f4b39, org.springframework.security.web.header.HeaderWriterFilter@33f9b482, org.springframework.web.filter.CorsFilter@9800705, org.springframework.security.web.authentication.logout.LogoutFilter@66e2e7e6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4c0e8280, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b42ffcf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a8900bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60720b65, org.springframework.security.web.access.ExceptionTranslationFilter@310c1db1, org.springframework.security.web.access.intercept.AuthorizationFilter@27cac022]
+2024-06-21 17:19:30.175 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-21 17:19:30.193 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-21 17:19:30.193 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-21 17:19:30.209 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 2.765 seconds (process running for 688.404)
+2024-06-21 17:19:30.209 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-21 17:19:30.224 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-21 17:19:30.224 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-21 17:19:30.224 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - Application registered itself as 34fecff80a31
+2024-06-21 17:19:30.224 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-21 17:20:21.694 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 17:20:21.710 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-21 17:20:21.710 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2024-06-21 17:20:21.710 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2024-06-21 17:20:25.163 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-21 17:20:25.206 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Starting ClassTrackSpringBootRestApiApplication using Java 21.0.2 with PID 9668 (I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI\target\classes started by biraj in I:\GITHUB\Projects\ClassTrack-SpringBoot-RestAPI)
+2024-06-21 17:20:25.207 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-21 17:20:25.264 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-21 17:20:25.265 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-21 17:20:26.565 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-21 17:20:26.633 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 7 JPA repository interfaces.
+2024-06-21 17:20:27.541 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-21 17:20:27.552 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-21 17:20:27.554 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-21 17:20:27.554 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-21 17:20:27.611 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-21 17:20:27.611 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2346 ms
+2024-06-21 17:20:27.752 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-21 17:20:27.948 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:classtrack user=SA
+2024-06-21 17:20:27.957 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-21 17:20:27.967 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:classtrack'
+2024-06-21 17:20:28.249 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-21 17:20:28.319 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-21 17:20:28.357 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-21 17:20:28.670 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-21 17:20:28.724 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-21 17:20:29.710 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-21 17:20:29.824 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 17:20:30.765 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-21 17:20:30.806 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-21 17:20:31.381 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
+2024-06-21 17:20:31.511 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1fd8848f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c3dfc33, org.springframework.security.web.context.SecurityContextHolderFilter@7cd96277, org.springframework.security.web.header.HeaderWriterFilter@79e06972, org.springframework.web.filter.CorsFilter@d450a4e, org.springframework.security.web.authentication.logout.LogoutFilter@1c64d3da, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@456378d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78036bbd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@792207f8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52357d3e, org.springframework.security.web.access.ExceptionTranslationFilter@200e90a3, org.springframework.security.web.access.intercept.AuthorizationFilter@5cfbdab8]
+2024-06-21 17:20:32.513 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-21 17:20:32.600 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-21 17:20:32.613 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-21 17:20:32.627 [restartedMain] INFO  e.c.ClassTrackSpringBootRestApiApplication - Started ClassTrackSpringBootRestApiApplication in 7.902 seconds (process running for 9.131)
+2024-06-21 17:20:32.739 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - Application registered itself as 34fecff80a31
+2024-06-21 17:20:32.773 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-21 17:20:32.773 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-21 17:20:32.775 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-21 17:28:31.835 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 17:28:31.835 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-06-21 17:28:31.835 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-21 17:28:31.835 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
